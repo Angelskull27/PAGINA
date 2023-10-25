@@ -3,6 +3,9 @@
 <head>
     <title>Formulario de Inicio de Sesión</title>
 </head>
+<link rel="stylesheet" type="text/css" href="./assets/css/estilos.css">
+    <img src="./assets/img/Logo.jpeg" alt="encabezado">
+</header>
 <body>
     <h2>Iniciar Sesión</h2>
     <form id="loginForm">
@@ -15,18 +18,9 @@
         <button type="button" onclick="capturarDatos()">Iniciar Sesión</button>
     </form>
 
-    <script>
-        function capturarDatos() {
-            // Obtén los valores de los campos de entrada
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-
-            // Muestra los datos en la consola del navegador
-            console.log("Nombre de Usuario: " + username);
-            console.log("Contraseña: " + password);
-
-            // Puedes enviar los datos a un servidor aquí para su procesamiento
-        }
-    </script>
+    <script src="./assets/js/login.js"></script>
+    <footer>
+        <p>&copy; CellTech</p>
+    </footer>
 </body>
 </html>
