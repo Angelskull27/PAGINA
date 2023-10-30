@@ -45,9 +45,8 @@ header nav a {
     
 }
 .contenido img{
-    max-width: 1200px;
+    max-width: 2000px;
     height: auto;
-    display: inline;
     margin: 0 auto;
     position: relative;
     display: inline-block;
@@ -108,20 +107,20 @@ header nav a {
 .eventos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; /* Espacio entre las noticias */
+    grid-gap: 0px; /* Espacio entre las noticias */
 }
 
 /* Estilo para cada noticia */
 .evento {
     background-color: #fff;
-    padding: 20px;
+    padding: 660x;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Ajusta el ancho máximo para evitar que las noticias se estiren demasiado */
 .evento img {
-    max-width: 100%;
+    max-width: 200%;
     height: auto;
 }
 
@@ -148,6 +147,56 @@ footer {
 .footer-text {
     font-size: 14px;
 }
+
+.login-container {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
 @media screen and (min-width: 360px) {
     /* Estilos generales */
 body {
@@ -421,8 +470,9 @@ header nav a {
 
 .contenido img {
     max-width: 100%;
-    height: auto;
-    display: block; /* Alinea las imágenes al centro */
+    height: 100%;
+    object-fit: cover;
+    display: inline; /* Alinea las imágenes al centro */
     margin: 0 auto;
     position: relative;
     display: inline-block;
@@ -484,6 +534,7 @@ header nav a {
     flex-basis: 75%;
     padding: 20px;
     box-sizing: border-box;
+    flex-direction: column;
 }
 
 .eventos h2 {

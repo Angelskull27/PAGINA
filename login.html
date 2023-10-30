@@ -4,19 +4,33 @@
     <title>Formulario de Inicio de Sesión</title>
 </head>
 <link rel="stylesheet" type="text/css" href="./assets/css/estilos.css">
-    <img src="./assets/img/Logo.jpeg" alt="encabezado">
 </header>
 <body>
-    <h2>Iniciar Sesión</h2>
-    <form id="loginForm">
-        <label for="username">Nombre de Usuario:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <button type="button" onclick="capturarDatos()">Iniciar Sesión</button>
-    </form>
+    <header>
+        <img src="./assets/img/Logo.jpeg" alt="Logo de la tienda">
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">¿Quienes somos?</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <input type="submit" value="Inicar sesion">
+        </form>
+      </div>
 
     <script src="./assets/js/login.js"></script>
     <footer>

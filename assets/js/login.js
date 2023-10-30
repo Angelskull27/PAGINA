@@ -1,11 +1,35 @@
-function capturarDatos() {
-    // Obtén los valores de los campos de entrada
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
 
-    // Muestra los datos en la consola del navegador
-    console.log("Nombre de Usuario: " + username);
-    console.log("Contraseña: " + password);
 
-    // Puedes enviar los datos a un servidor aquí para su procesamiento
-}
+document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('submit', async (event) => {
+      event.preventDefault();
+  
+      const user = document.querySelector('#username').value;
+      const password = document.querySelector('#password').value;
+  
+      // Hacer una solicitud de autenticación, por ejemplo, a través de una API o verificación de usuario en local
+      // Supongamos que tenemos una lista de usuarios en un archivo JSON llamado 'users.json'
+      const response = await fetch('../../data/users.json');
+      const users = await response.json();
+  
+      // Buscar el usuario en la lista
+      const foundUser = users.find((userData) => userData.username === user && userData.password === password);
+  
+      if (foundUser) {
+        // Usuario encontrado, guardar los datos en el sessionStorage
+        sessionStorage.setItem('user', JSON.stringify(foundUser));
+  
+        if (foundUser.role === 'admin') {
+          // Si el usuario tiene rol de admin, redirigirlo a la página de administrador
+          window.location.href = "admin.html";
+        } else if (foundUser.role === 'user') {
+          // Si el usuario tiene rol de usuario, redirigirlo a la página principal
+          window.location.href = "index.html";
+        }
+      } else {
+        // Usuario no encontrado, muestra un mensaje de error
+        alert("Credenciales inválidas. Por favor, intente de nuevo.");
+      }
+    });
+  });
+  

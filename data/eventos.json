@@ -1,23 +1,23 @@
 
    [
       {
-          "imagen": "https://picsum.photos/800/200",
-          "titulo": "Nuevo Evento 1",
+          "imagen": "poco.jpg",
+          "titulo": "Celulares Poco",
           "descripcion": "Nueva descripción del Evento 1."
       },
       {
-          "imagen": "https://picsum.photos/800/200",
-          "titulo": "Nuevo Evento 2",
+          "imagen": "Samsung.jpg",
+          "titulo": "Celulares Samsung",
           "descripcion": "Nueva descripción del Evento 2."
       },
       {
-          "imagen": "https://picsum.photos/800/200",
-          "titulo": "Nuevo Evento 3",
+          "imagen": "vivo.jpg",
+          "titulo": "Celulares Vivo",
           "descripcion": "Nueva descripción del Evento 3."
       },
       {
-          "imagen": "https://picsum.photos/800/200",
-          "titulo": "Nuevo Evento 4",
+          "imagen": "xiaomi.jpg",
+          "titulo": "Celulares Xiaomi",
           "descripcion": "Nueva descripción del Evento 4."
       }
   
