@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const users = await response.json();
   
       // Buscar el usuario en la lista
-      const foundUser = users.find((userData) => userData.username === user && userData.password === password);
+      const foundUser = users.find((usersData) => usersData.username === user && usersData.password === password);
   
       if (foundUser) {
         // Usuario encontrado, guardar los datos en el sessionStorage
