@@ -11,18 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
       // Supongamos que tenemos una lista de usuarios en un archivo JSON llamado 'users.json'
       const response = await fetch('../../data/users.json');
       const users = await response.json();
+      console.log(users);
   
       // Buscar el usuario en la lista
-      const foundUser = users.find((usersData) => usersData.username === user && usersData.password === password);
-  
+      const foundUser = users.find((usersData) => 
+      (usersData.user === user && usersData.password === password));
+      console.log(foundUser)
       if (foundUser) {
         // Usuario encontrado, guardar los datos en el sessionStorage
         sessionStorage.setItem('user', JSON.stringify(foundUser));
   
-        if (foundUser.role === 'admin') {
+        if (foundUser.rol === 'admin') {
           // Si el usuario tiene rol de admin, redirigirlo a la página de administrador
           window.location.href = "admin.html";
-        } else if (foundUser.role === 'user') {
+        } else if (foundUser.rol === 'user') {
           // Si el usuario tiene rol de usuario, redirigirlo a la página principal
           window.location.href = "index.html";
         }
