@@ -1,0 +1,24 @@
+
+[
+    {
+        "Marca de celular": "Poco",
+        "Celulares disponibles": "Xiaomi Poco X5 PRO",
+        "Stock": "50."
+    },
+    {
+        "Marca de celular": "Samnsung",
+        "Celulares disponibles": "Samnsung S22 Pro",
+        "Stock": "40."
+    },
+    {
+        "Marca de celular": "Vivo",
+        "Celulares disponibles": "Vivo V25",
+        "Stock": "65."
+    },
+    {
+        "Marca de celular": "Xiaomi",
+        "Celulares disponibles": "Xiaomi Redmi note 12 Pro+",
+        "Stock": "90."
+    }
+
+]
