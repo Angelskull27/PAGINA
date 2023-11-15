@@ -134,6 +134,36 @@ header nav a {
     font-size: 16px;
     color: #333;
 }
+.accesorios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px; /* Espacio entre las noticias */
+}
+
+/* Estilo para cada noticia */
+.accesorio {
+    background-color: #fff;
+    padding: 660x;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajusta el ancho máximo para evitar que las noticias se estiren demasiado */
+.accesorio img {
+    max-width: 200%;
+    height: auto;
+}
+
+/* Modifica el estilo de los títulos y el contenido de las noticias */
+.accesorio h3 {
+    color: #007bff;
+    font-size: 18px;
+}
+
+.accesorio p {
+    font-size: 16px;
+    color: #333;
+}
 
 footer {
     clear: both;

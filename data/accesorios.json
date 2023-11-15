@@ -1,0 +1,24 @@
+
+[
+    {
+        "imagen": "poco.jpg",
+        "titulo": "Celulares Poco",
+        "descripcion": "Nueva descripción del Evento 1."
+    },
+    {
+        "imagen": "Samsung.jpg",
+        "titulo": "Celulares Samsung",
+        "descripcion": "Nueva descripción del Evento 2."
+    },
+    {
+        "imagen": "vivo.jpg",
+        "titulo": "Celulares Vivo",
+        "descripcion": "Nueva descripción del Evento 3."
+    },
+    {
+        "imagen": "xiaomi.jpg",
+        "titulo": "Celulares Xiaomi",
+        "descripcion": "Nueva descripción del Evento 4."
+    }
+
+]
