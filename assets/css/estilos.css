@@ -143,14 +143,14 @@ header nav a {
 /* Estilo para cada noticia */
 .accesorio {
     background-color: #fff;
-    padding: 660x;
+    padding: 16px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Ajusta el ancho máximo para evitar que las noticias se estiren demasiado */
 .accesorio img {
-    max-width: 200%;
+    max-width: 100%;
     height: auto;
 }
 
