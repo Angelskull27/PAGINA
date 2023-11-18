@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Hacer una solicitud de autenticación, por ejemplo, a través de una API o verificación de usuario en local
       // Supongamos que tenemos una lista de usuarios en un archivo JSON llamado 'users.json'
-      const response = await fetch('../../data/users.json');
+      const response = await fetch('/data/users.json');
       const users = await response.json();
       console.log(users);
   

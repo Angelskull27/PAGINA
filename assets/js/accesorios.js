@@ -1,6 +1,6 @@
 const getNoticias = async() => {
 
-    const data = await fetch('../../data/accesorios.json');
+    const data = await fetch('/data/accesorios.json');
     const noticias = await data.json();
     console.log(noticias);
     let news = document.querySelector('#usos');
