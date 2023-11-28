@@ -145,7 +145,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 
 /* Modifica el estilo de los títulos y el contenido de las noticias */
 .evento h3 {
-    color:  black
+    color:  black;
     font-size: 18px;
 }
 
