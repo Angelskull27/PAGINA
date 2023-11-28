@@ -4,6 +4,10 @@ body {
     padding: 0;
     min-width: 360px;
     background-color: #f5f5f5;
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 header {
@@ -13,6 +17,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #8360c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 header img {
@@ -43,6 +51,7 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     
+    
 }
 .contenido img{
     max-width: 2000px;
@@ -58,6 +67,10 @@ header nav a {
     color: #fff;
     padding: 20px;
     box-sizing: border-box;
+    background: #8360c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .menu h2 {
@@ -108,6 +121,7 @@ header nav a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0px; /* Espacio entre las noticias */
+    
 }
 
 /* Estilo para cada noticia */
@@ -116,6 +130,11 @@ header nav a {
     padding: 660x;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
 }
 
 /* Ajusta el ancho máximo para evitar que las noticias se estiren demasiado */
@@ -126,7 +145,7 @@ header nav a {
 
 /* Modifica el estilo de los títulos y el contenido de las noticias */
 .evento h3 {
-    color: #007bff;
+    color:  black
     font-size: 18px;
 }
 
@@ -137,7 +156,8 @@ header nav a {
 .accesorios {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0px; /* Espacio entre las noticias */
+    grid-gap: 0px;
+     /* Espacio entre las noticias */
 }
 
 /* Estilo para cada noticia */
@@ -146,12 +166,18 @@ header nav a {
     padding: 16px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #2BC0E4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 /* Ajusta el ancho máximo para evitar que las noticias se estiren demasiado */
 .accesorio img {
     max-width: 100%;
     height: auto;
+    background: #8360c3;  /* fallback for old browsers */
+
 }
 
 /* Modifica el estilo de los títulos y el contenido de las noticias */
@@ -172,6 +198,10 @@ footer {
     text-align: center;
     padding: 10px;
     flex-basis: 100%;
+    background: #8360c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .footer-text {
@@ -210,6 +240,10 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
   }
   
   button {
@@ -221,6 +255,10 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
   }
   
   button:hover {
